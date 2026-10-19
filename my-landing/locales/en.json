@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "tagline": "Should I? We'll tell you.",
+    "description": "A calm check-in before you spend. Ask Sadiq, your AI money co-pilot, before you buy.",
+    "ogLocale": "en_QA"
+  },
+  "nav": {
+    "logoAlt": "ShouldAI logo",
+    "joinWaitlist": "Join the waitlist",
+    "switchLanguage": "العربية",
+    "switchLanguageLabel": "اقرأ هذه الصفحة بالعربية"
+  },
+  "chat": {
+    "you": "You: ",
+    "sadiq": "Sadiq: "
+  },
+  "hero": {
+    "questionMark": "?",
+    "eyebrow": "For everyday spending in Qatar",
+    "titleLine1": "Should I?",
+    "titleLine2": "We'll tell you.",
+    "lead": "A calm check-in before you spend.",
+    "body": "Ask Sadiq, your AI money co-pilot, before you buy. Built for everyday life in Qatar.",
+    "comingSoon": "iOS and Android, coming soon.",
+    "chatLabel": "Example chat with Sadiq",
+    "sadiqName": "Sadiq",
+    "sadiqRole": "your money co-pilot",
+    "userMessage": "Should I get the new sneakers? QAR 320",
+    "sadiqBefore": "You've got ",
+    "sadiqAmount": "QAR 180",
+    "sadiqAfter": " left for fun this month. Still want it?",
+    "chipSleep": "Sleep on it",
+    "chipOptions": "Show me options"
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "It's 11 p.m. Your cart is full.",
+    "body1": "Impulse spending rarely happens at the mall. It happens late at night, half-scrolling, one tap away from checkout.",
+    "body2": "It's not that we're careless. In that moment we just don't have the full picture: what's left this month, the plans coming up this weekend, the thing we're actually saving for. ShouldAI puts that picture in front of you before you pay.",
+    "illustrationLabel": "Illustration: a phone notification at 11:04 p.m. showing a shopping cart of QAR 249, one tap from checkout.",
+    "day": "Thursday",
+    "time": "11:04",
+    "period": "p.m.",
+    "cart": "Your cart · 3 items",
+    "total": "QAR 249",
+    "checkout": "Checkout"
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Three steps, about ten seconds.",
+    "stepLabel": "Step {n}: ",
+    "steps": [
+      {
+        "title": "Tell Sadiq what you're about to buy.",
+        "text": "Type it like you'd text a friend: what it is and what it costs."
+      },
+      {
+        "title": "Sadiq checks it against your budget and goals.",
+        "text": "What's left this month, what you're saving for, and what's coming up next."
+      },
+      {
+        "title": "You decide with a clear head.",
+        "text": "No lectures, no blocked cards. Just the full picture, and then it's your call."
+      }
+    ]
+  },
+  "sadiq": {
+    "eyebrow": "Meet Sadiq",
+    "title": "A level-headed friend who remembers your budget.",
+    "body": "Sadiq is the AI inside ShouldAI. No judging, no guilt trips, no blocking your card. Just a quick, honest look at the numbers so you can pause, think, and choose on purpose. Sometimes the answer is “go for it.”",
+    "chatLabel": "Example conversation with Sadiq",
+    "messages": [
+      {
+        "from": "me",
+        "text": "Thinking of getting new headphones. QAR 650."
+      },
+      {
+        "from": "sadiq",
+        "text": "That's more than your fun budget for the month. If you set aside QAR 100 a week, you'd have it in about six weeks without touching your savings goal."
+      },
+      {
+        "from": "me",
+        "text": "Okay, maybe not tonight."
+      },
+      {
+        "from": "sadiq",
+        "text": "Fair call. I'll keep it on your wishlist. Check back Friday?"
+      }
+    ]
+  },
+  "app": {
+    "eyebrow": "Inside the app",
+    "title": "Your whole month, on one calm screen.",
+    "features": [
+      {
+        "title": "A budget that keeps score",
+        "text": "See what you've spent this month, what's left, and how many days are still to go."
+      },
+      {
+        "title": "Savings you won't spend by accident",
+        "text": "Set a goal and Sadiq keeps that money protected from impulse buys."
+      },
+      {
+        "title": "Sadiq Savings",
+        "text": "Every purchase you decide to skip adds up, so you can see what a pause is worth."
+      },
+      {
+        "title": "Know your patterns",
+        "text": "Spending by category, plus a heads-up when late-night shopping starts creeping in."
+      }
+    ],
+    "mockupLabel": "The ShouldAI home screen: QAR 1,496 spent of a QAR 5,000 monthly budget, a QAR 1,000 savings goal on track, QAR 810 saved by skipping purchases, and spending split across shopping, entertainment, food and transportation.",
+    "money": "QAR {n}",
+    "greeting": "Hello, Noor",
+    "bank": "Bank account connected",
+    "thisMonth": "This month",
+    "spentOf": "spent of {budget} budget",
+    "monthFooter": "12 days left · {amount} remaining",
+    "savingsGoal": "Savings goal",
+    "protectedOf": "protected of {goal} goal",
+    "goalFooter": "12 days left · on track",
+    "saved": "{amount} saved",
+    "savedSub": "purchases you told Sadiq you'd skip",
+    "byCategory": "Spending by category",
+    "categories": [
+      "Shopping",
+      "Entertainment",
+      "Food",
+      "Transportation"
+    ],
+    "patterns": "Spending patterns",
+    "lateNight": "Late-night spending",
+    "lateNightHours": "9 PM – 5 AM",
+    "tabs": [
+      "Home",
+      "Budgets",
+      "Transactions",
+      "Sadiq",
+      "Wishlist"
+    ]
+  },
+  "waitlist": {
+    "eyebrow": "Early access",
+    "title": "Be first to try ShouldAI",
+    "body": "We're opening early access in Qatar first. Leave your details and we'll let you know when it's your turn.",
+    "comingSoon": "iOS and Android, coming soon."
+  },
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "errors": {
+      "name": "Please tell us your name.",
+      "emailMissing": "We need your email to let you know.",
+      "emailInvalid": "That email doesn't look quite right."
+    },
+    "submit": "Join the waitlist",
+    "submitting": "Joining…",
+    "failure": "Sorry, something went wrong on our side. Please try again in a moment.",
+    "successTitle": "You're on the list, {name}!",
+    "successBody": "Thanks for joining. We'll email you as soon as ShouldAI is ready to try. No spam, just the one note that matters."
+  },
+  "stores": {
+    "appleSmall": "Download on the",
+    "appleBig": "App Store",
+    "googleSmall": "Get it on",
+    "googleBig": "Google Play",
+    "comingSoon": "Coming soon"
+  },
+  "footer": {
+    "instagram": "Instagram",
+    "disclaimer": "ShouldAI is a prototype and does not provide licensed financial advice."
+  }
+}
