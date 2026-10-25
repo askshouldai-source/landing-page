@@ -32,18 +32,26 @@
     "chipSleep": "Sleep on it",
     "chipOptions": "Show me options"
   },
-  "problem": {
-    "eyebrow": "The problem",
-    "title": "It's 11 p.m. Your cart is full.",
-    "body1": "Impulse spending rarely happens at the mall. It happens late at night, half-scrolling, one tap away from checkout.",
-    "body2": "It's not that we're careless. In that moment we just don't have the full picture: what's left this month, the plans coming up this weekend, the thing we're actually saving for. ShouldAI puts that picture in front of you before you pay.",
-    "illustrationLabel": "Illustration: a phone notification at 11:04 p.m. showing a shopping cart of QAR 249, one tap from checkout.",
-    "day": "Thursday",
-    "time": "11:04",
-    "period": "p.m.",
-    "cart": "Your cart · 3 items",
-    "total": "QAR 249",
-    "checkout": "Checkout"
+  "challenges": {
+    "eyebrow": "The challenges",
+    "title": "Spending well is harder than it should be.",
+    "body1": "It's not that we're careless. The moment we decide to buy is set up against a clear-headed choice.",
+    "body2": "ShouldAI is built to take on each of these, right when you're about to pay.",
+    "figureTitle": "What gets in the way",
+    "items": [
+      {
+        "title": "Impulse hits late at night",
+        "text": "Most impulse buys happen half-scrolling, one tap from checkout, not at the mall."
+      },
+      {
+        "title": "You never see the full picture",
+        "text": "What's left this month, weekend plans, what you're saving for: none of it is on the checkout screen."
+      },
+      {
+        "title": "Budgeting apps look backward",
+        "text": "They tell you what you spent after it's too late to undo."
+      }
+    ]
   },
   "how": {
     "eyebrow": "How it works",

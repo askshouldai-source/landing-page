@@ -73,6 +73,23 @@ const stepIcons = [
   </svg>,
 ];
 
+const challengeIcons = [
+  <svg key="moon" {...iconProps} className="h-6 w-6">
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+  </svg>,
+  <svg key="eye-off" {...iconProps} className="h-6 w-6">
+    <path d="M10.7 5.1A10.4 10.4 0 0 1 12 5c7 0 10 7 10 7a13.2 13.2 0 0 1-1.7 2.7" />
+    <path d="M14.1 14.2a3 3 0 0 1-4.3-4.3" />
+    <path d="M17.5 17.5A10.7 10.7 0 0 1 12 19c-7 0-10-7-10-7a13.2 13.2 0 0 1 4.5-5.5" />
+    <path d="m2 2 20 20" />
+  </svg>,
+  <svg key="history" {...iconProps} className="h-6 w-6">
+    <path d="M3 12a9 9 0 1 0 9-9 9.8 9.8 0 0 0-6.7 2.7L3 8" />
+    <path d="M3 3v5h5" />
+    <path d="M12 7v5l4 2" />
+  </svg>,
+];
+
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
@@ -85,7 +102,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <Reveal />
 
       {/* 1. Hero */}
-      <header className="hero on-dark relative overflow-hidden text-white">
+      <header id="top" className="hero on-dark relative overflow-clip text-white">
         <div aria-hidden="true" className="hero-q">
           {t.hero.questionMark}
         </div>
@@ -115,7 +132,6 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </nav>
 
         <div
-          id="top"
           className={`${container} relative grid items-center gap-14 pt-10 pb-20 md:grid-cols-[1.15fr_1fr] md:pt-16 md:pb-28`}
         >
           <div className="fade-in">
@@ -180,46 +196,39 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       </header>
 
       <main>
-        {/* 2. The problem */}
-        <section aria-labelledby="problem-title" className="py-20 md:py-28">
+        {/* 2. The challenges */}
+        <section aria-labelledby="challenges-title" className="py-20 md:py-28">
           <div className={`${container} grid items-center gap-12 md:grid-cols-2`}>
             <div data-reveal>
               <p className="text-sm font-extrabold tracking-widest text-berry uppercase">
-                {t.problem.eyebrow}
+                {t.challenges.eyebrow}
               </p>
-              <h2 id="problem-title" className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
-                {t.problem.title}
+              <h2 id="challenges-title" className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+                {t.challenges.title}
               </h2>
-              <p className="mt-5 text-lg leading-relaxed text-muted">{t.problem.body1}</p>
-              <p className="mt-4 text-lg leading-relaxed text-muted">{t.problem.body2}</p>
+              <p className="mt-5 text-lg leading-relaxed text-muted">{t.challenges.body1}</p>
+              <p className="mt-4 text-lg leading-relaxed text-muted">{t.challenges.body2}</p>
             </div>
 
             <div data-reveal className="flex justify-center">
-              <div
-                role="img"
-                aria-label={t.problem.illustrationLabel}
-                className="w-full max-w-sm rounded-3xl bg-ink p-7 text-white shadow-xl"
-              >
-                <div aria-hidden="true">
-                  <div className="flex items-center justify-between text-white/60">
-                    <svg {...iconProps} className="h-6 w-6">
-                      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-                    </svg>
-                    <span className="text-sm font-bold">{t.problem.day}</span>
-                  </div>
-                  <p className="mt-6 text-6xl font-extrabold tracking-tight">{t.problem.time}</p>
-                  <p className="text-sm font-semibold text-white/60">{t.problem.period}</p>
-                  <div className="mt-8 rounded-2xl bg-white/10 p-4">
-                    <p className="text-sm text-white/70">{t.problem.cart}</p>
-                    <div className="mt-2 flex items-center justify-between">
-                      <p className="text-2xl font-extrabold">{t.problem.total}</p>
-                      <span className="rounded-full bg-white px-4 py-2 text-sm font-extrabold text-ink">
-                        {t.problem.checkout}
+              <figure className="w-full max-w-sm rounded-3xl bg-ink p-7 text-white shadow-xl">
+                <figcaption className="text-sm font-bold tracking-wide text-white/60">
+                  {t.challenges.figureTitle}
+                </figcaption>
+                <ol className="mt-6 grid gap-3">
+                  {t.challenges.items.map((item, i) => (
+                    <li key={item.title} className="flex gap-4 rounded-2xl bg-white/10 p-4">
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white">
+                        {challengeIcons[i]}
                       </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      <div>
+                        <p className="font-extrabold leading-snug">{item.title}</p>
+                        <p className="mt-1 text-sm leading-relaxed text-white/70">{item.text}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </figure>
             </div>
           </div>
         </section>
